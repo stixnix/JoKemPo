@@ -226,25 +226,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
     Jogo jogo = new Jogo();
     
     int escolhaJogador = usu;
-    // Supondo que o jogador escolheu PEDRA (1)
+    
+    
     int escolhaComputador = jogo.gerarNumeroAleatorio();
+    
     resultado = Jogo.determinarResultado(escolhaJogador, escolhaComputador);
     jLabelResul = setText(resultado);
-    // Atualiza o texto do JLabel com base no resultado do jogo
-    switch (escolhaComputador) {
-        case 1:
-            jLabeladv.setText("Pedra");
-            break;
-        case 2:
-            jLabeladv.setText("Papel");
-            break;
-        case 3:
-            jLabeladv.setText("Tesoura");
-            break;
-        default:
-            jLabeladv.setText("Algo deu errado.");
-            break;
-    }
+  
+
     
     switch (usu) {
         case 1:
@@ -254,7 +243,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             jLabelp1.setText("Papel");
             break;
         case 3:
-            jLabelp1.setText("Tes");
+            jLabelp1.setText("Tesoura");
             break;
         default:
             jLabelp1.setText("Algo deu errado.");
