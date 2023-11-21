@@ -8,7 +8,7 @@ package jokenpo.Controller;
 import java.util.Random;
 
 public class Jogo {
-    public  int gerarNumeroAleatorio() {
+    public   int gerarNumeroAleatorio() {
         Random random = new Random();
         return random.nextInt(3) + 1;
     }
