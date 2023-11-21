@@ -13,7 +13,7 @@ public class Jogo {
         return random.nextInt(3) + 1;
     }
 
-    public static String determinarResultado(int escolhaJogador, int escolhaComputador) {
+    public String determinarResultado(int escolhaJogador, int escolhaComputador) {
         if (escolhaJogador == escolhaComputador) {
             return "Empate";
         } else if ((escolhaJogador == 1 && escolhaComputador == 3) ||
