@@ -116,7 +116,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabelAdv.setFont(new java.awt.Font("Twelve Ton Sushi", 0, 48)); // NOI18N
 
         jLabelp1.setFont(new java.awt.Font("Twelve Ton Sushi", 0, 48)); // NOI18N
-        jLabelp1.setText("oi");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,57 +204,57 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioTesouraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioTesouraActionPerformed
-         usu = 3;        // TODO add your handling code here:
+        usu = 3;        // TODO add your handling code here:
     }//GEN-LAST:event_jRadioTesouraActionPerformed
 
     private void jRadioPedraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioPedraActionPerformed
-         usu = 1; // TODO add your handling code here:
+        usu = 1; // TODO add your handling code here:
     }//GEN-LAST:event_jRadioPedraActionPerformed
 
     private void jRadioPapelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioPapelActionPerformed
-         usu = 2;        // TODO add your handling code here:
+        usu = 2;        // TODO add your handling code here:
     }//GEN-LAST:event_jRadioPapelActionPerformed
 
     private void jButtonComecarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonComecarActionPerformed
-    Jogo jogo = new Jogo();
-    
-    int escolhaJogador = usu;
-    
-    
-    int escolhaComputador = jogo.gerarNumeroAleatorio();
-    
-    resultado = jogo.determinarResultado(escolhaJogador, escolhaComputador);
-    jLabelResultado.setText(resultado);
-      
-    switch (escolhaJogador) {
-        case 1:
-            jLabelp1.setText("Pedra");
-            break;
-        case 2:
-            jLabelp1.setText("Papel");
-            break;
-        case 3:
-            jLabelp1.setText("Tesoura");
-            break;
-        default:
-            jLabelp1.setText("Algo deu errado.");
-            break;
-    }
-    
+        Jogo jogo = new Jogo();
+
+        int escolhaJogador = usu;
+
+
+        int escolhaComputador = jogo.gerarNumeroAleatorio();
+
+        resultado = jogo.determinarResultado(escolhaJogador, escolhaComputador);
+        jLabelResultado.setText(resultado);
+
+        switch (escolhaJogador) {
+            case 1:
+                jLabelp1.setText("Pedra");
+                break;
+            case 2:
+                jLabelp1.setText("Papel");
+                break;
+            case 3:
+                jLabelp1.setText("Tesoura");
+                break;
+            default:
+                jLabelp1.setText("Algo deu errado.");
+                break;
+        }
+
         switch (escolhaComputador) {
-        case 1:
-            jLabelAdv.setText("Pedra");
-            break;
-        case 2:
-            jLabelAdv.setText("Papel");
-            break;
-        case 3:
-            jLabelAdv.setText("Tesoura");
-            break;
-        default:
-            jLabelAdv.setText("Algo deu errado.");
-            break;
-    }
+            case 1:
+                jLabelAdv.setText("Pedra");
+                break;
+            case 2:
+                jLabelAdv.setText("Papel");
+                break;
+            case 3:
+                jLabelAdv.setText("Tesoura");
+                break;
+            default:
+                jLabelAdv.setText("Algo deu errado.");
+                break;
+        }
     }//GEN-LAST:event_jButtonComecarActionPerformed
 
     /**

@@ -261,7 +261,6 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Twelve Ton Sushi" size="48" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="oi"/>
       </Properties>
     </Component>
   </SubComponents>
